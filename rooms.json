@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Cozy Haven Room",
+    "price": 1000,
+    "description": "Escape to comfort in our Cozy Haven Room, a snug retreat designed for intimate relaxation.",
+    "image": "assets/room1.jpg",
+    "amenities": ["Free Wi-Fi", "Air Conditioning", "Room Service", "Attached Bathroom", "Flat-screen TV"],
+    "link": "https://wa.link/at5ion"
+  },
+  {
+    "id": 2,
+    "name": "Spacious Serenity Suite",
+    "price": 1500,
+    "description": "Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets roomy elegance.",
+    "image": "assets/small.jpg",
+    "amenities": ["Free Wi-Fi", "Air Conditioning", "Room Service", "Balcony View", "King Size Bed", "Mini Fridge"],
+    "link": "https://wa.link/at5ion"
+  },
+  {
+    "id": 3,
+    "name": "Premium Family Room",
+    "price": 2500,
+    "description": "Perfect for families looking for an unforgettable stay with stunning nature views and ultimate comfort.",
+    "image": "assets/large.jpg",
+    "amenities": ["Free Wi-Fi", "2 King Size Beds", "Room Service", "Mountain View", "Tea/Coffee Maker"],
+    "link": "https://wa.link/at5ion"
+  }
+]

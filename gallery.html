@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - KingSukh Guest House</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <!-- Innovative Floating Navbar -->
+    <header class="header">
+        <nav class="floating-nav">
+            <a href="index.html" class="brand">King<span>Sukh</span></a>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <img src="assets/out.jpg" alt="Gallery Background" class="bg-img" />
+        <div class="content container reveal-up">
+            <h1>Gallery</h1>
+            <p>A glimpse into your next retreat</p>
+        </div>
+    </div>
+
+    <!-- Gallery Grid Vanilla Setup -->
+    <div class="container section-padding">
+        <h2 class="section-title text-center reveal-up" style="display: block;">Memories at KingSukh</h2>
+        <p class="section-subtitle text-center reveal-up">Explore our beautiful spaces and scenic surroundings.</p>
+        
+        <div class="gallery-grid">
+            <!-- Images are hardcoded. Vanilla JS handles Lightbox targeting. -->
+            <div class="gallery-item reveal" data-src="assets/1.jpg">
+                <img src="assets/1.jpg" alt="Gallery" class="gallery-img" loading="lazy" />
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus gallery-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item reveal" data-src="assets/out.jpg">
+                <img src="assets/out.jpg" alt="Gallery" class="gallery-img" loading="lazy" />
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus gallery-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item reveal" data-src="assets/recep.jpg">
+                <img src="assets/recep.jpg" alt="Gallery" class="gallery-img" loading="lazy" />
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus gallery-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item reveal" data-src="assets/room1.jpg">
+                <img src="assets/room1.jpg" alt="Gallery" class="gallery-img" loading="lazy" />
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus gallery-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item reveal" data-src="assets/service.jpg">
+                <img src="assets/service.jpg" alt="Gallery" class="gallery-img" loading="lazy" />
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus gallery-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item reveal" data-src="assets/small.jpg">
+                <img src="assets/small.jpg" alt="Gallery" class="gallery-img" loading="lazy" />
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus gallery-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item reveal" data-src="assets/large.jpg">
+                <img src="assets/large.jpg" alt="Gallery" class="gallery-img" loading="lazy" />
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus gallery-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item reveal" data-src="assets/baranti.webp">
+                <img src="assets/baranti.webp" alt="Gallery" class="gallery-img" loading="lazy" />
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus gallery-icon"></i>
+                </div>
+            </div>
+            <div class="gallery-item reveal" data-src="assets/mithonDam.webp">
+                <img src="assets/mithonDam.webp" alt="Gallery" class="gallery-img" loading="lazy" />
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus gallery-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Component -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col reveal-up">
+                <h3>KingSukh Guest House</h3>
+                <p>Discover a world of comfort, luxury, and adventure. Envelope yourself in the scenic allure of
+                    Purulia.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/kingsukhguesthouse/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col reveal-up">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="rooms.html">Our Rooms</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-col reveal-up">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt" style="color: var(--accent-gold); margin-right: 10px;"></i>
+                    Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</p>
+                <p><i class="fas fa-envelope" style="color: var(--accent-gold); margin-right: 10px;"></i>
+                    kkghosh0099@gmail.com</p>
+                <p><i class="fas fa-phone-alt" style="color: var(--accent-gold); margin-right: 10px;"></i> +91
+                    9007062180</p>
+            </div>
+        </div>
+        <div class="footer-bottom reveal-up">
+            <p>&copy; 2026 KingSukh Guest House. All rights reserved.</p>
+        </div>
+    </div>
+    <a href="https://wa.link/at5ion" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</footer>
+
+
+    <!-- Javascript files -->
+    <script src="script.js"></script>
+</body>
+</html>
