@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - KingSukh Guest House</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <!-- Innovative Floating Navbar -->
+    <header class="header">
+        <nav class="floating-nav">
+            <a href="index.html" class="brand">King<span>Sukh</span></a>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <img src="assets/out.jpg" alt="Gallery Background" class="bg-img" />
+        <div class="content container reveal-up">
+            <h1>Gallery</h1>
+            <p>A glimpse into your next retreat</p>
+        </div>
+    </div>
+
+    <!-- Coverflow Voyage Slider -->
+    <section class="coverflow-section">
+        <!-- Blurred Backgrounds -->
+        <div class="coverflow-bg" id="cb-1" style="background-image: url('assets/out.jpg'); opacity: 1;"></div>
+        <div class="coverflow-bg" id="cb-2" style="background-image: url('assets/room1.jpg');"></div>
+        <div class="coverflow-bg" id="cb-3" style="background-image: url('assets/baranti.webp');"></div>
+        <div class="coverflow-bg" id="cb-4" style="background-image: url('assets/recep.jpg');"></div>
+        <div class="coverflow-bg" id="cb-5" style="background-image: url('assets/mithonDam.webp');"></div>
+
+        <div class="coverflow-container">
+            <!-- left arrow -->
+            <button class="cover-nav cover-prev"><i class="fas fa-chevron-left"></i></button>
+
+            <div class="coverflow-slider">
+                <!-- Slide 1 -->
+                <div class="coverflow-slide active" data-bg="cb-1">
+                    <img src="assets/out.jpg" alt="Out">
+                    <div class="coverflow-text">
+                        <h2>FRONT FACADE</h2>
+                        <p>KINGSUKH &mdash; GUEST HOUSE</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="coverflow-slide next" data-bg="cb-2">
+                    <img src="assets/room1.jpg" alt="Room">
+                    <div class="coverflow-text">
+                        <h2>COZY HAVEN</h2>
+                        <p>ROOMS &mdash; COMFORT</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="coverflow-slide hidden" data-bg="cb-3">
+                    <img src="assets/baranti.webp" alt="Baranti">
+                    <div class="coverflow-text">
+                        <h2>BARANTI</h2>
+                        <p>LAKE &mdash; NATURE</p>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="coverflow-slide hidden" data-bg="cb-4">
+                    <img src="assets/recep.jpg" alt="Reception">
+                    <div class="coverflow-text">
+                        <h2>WELCOME</h2>
+                        <p>RECEPTION &mdash; READY</p>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="coverflow-slide prev" data-bg="cb-5">
+                    <img src="assets/mithonDam.webp" alt="Maithon Dam">
+                    <div class="coverflow-text">
+                        <h2>MAITHON</h2>
+                        <p>DAM &mdash; ATTRACTION</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right arrow -->
+            <button class="cover-nav cover-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- The Full Portfolio Premium Bento Grid -->
+    <section class="section-padding" style="background-color: var(--bg-light); position: relative;">
+        <div class="container text-center">
+            <h2 class="section-title reveal-up" style="color: var(--primary-blue);">Full Portfolio</h2>
+            <p class="section-subtitle reveal-up">Every corner of our paradise curated for you.</p>
+        </div>
+
+        <div class="bento-gallery reveal-up">
+            <!-- Bento Item 1 (Large) -->
+            <div class="bento-item" data-full="assets/out.jpg">
+                <img src="assets/out.jpg" alt="Guest House Exterior" loading="lazy"/>
+                <div class="bento-overlay">
+                    <div class="bento-info">
+                        <h4>Front Facade</h4>
+                        <p><i class="fas fa-camera"></i> Stunning exterior views</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bento Item 2 (Wide) -->
+            <div class="bento-item" data-full="assets/mithonDam.webp">
+                <img src="assets/mithonDam.webp" alt="Maithon Dam" loading="lazy"/>
+                <div class="bento-overlay">
+                    <div class="bento-info">
+                        <h4>Maithon Dam</h4>
+                        <p><i class="fas fa-water"></i> Nearby attractions</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bento Item 3 (Small) -->
+            <div class="bento-item" data-full="assets/recep.jpg">
+                <img src="assets/recep.jpg" alt="Reception" loading="lazy"/>
+                <div class="bento-overlay">
+                    <div class="bento-info">
+                        <h4>Welcome</h4>
+                        <p><i class="fas fa-door-open"></i> Front desk</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento Item 4 (Small) -->
+            <div class="bento-item" data-full="assets/1.jpg">
+                <img src="assets/1.jpg" alt="Dining Area" loading="lazy"/>
+                <div class="bento-overlay">
+                    <div class="bento-info">
+                        <h4>Dining Area</h4>
+                        <p><i class="fas fa-utensils"></i> Fresh cuisine</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento Item 5 (Panorama Wide) -->
+            <div class="bento-item" data-full="assets/baranti.webp">
+                <img src="assets/baranti.webp" alt="Baranti Lake" loading="lazy"/>
+                <div class="bento-overlay">
+                    <div class="bento-info">
+                        <h4>Baranti Lake</h4>
+                        <p><i class="fas fa-tree"></i> Serene landscapes</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento Item 6 (Large Square) -->
+            <div class="bento-item" data-full="assets/room1.jpg">
+                <img src="assets/room1.jpg" alt="Room Interior" loading="lazy"/>
+                <div class="bento-overlay">
+                    <div class="bento-info">
+                        <h4>Cozy Haven</h4>
+                        <p><i class="fas fa-bed"></i> Comfort uncompromised</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento Item 7 (Wide) -->
+            <div class="bento-item" data-full="assets/service.jpg">
+                <img src="assets/service.jpg" alt="Room Service" loading="lazy"/>
+                <div class="bento-overlay">
+                    <div class="bento-info">
+                        <h4>Room Service</h4>
+                        <p><i class="fas fa-concierge-bell"></i> 24/7 dedicated</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bento Item 8 (Wide) -->
+            <div class="bento-item" data-full="assets/small.jpg">
+                <img src="assets/small.jpg" alt="Serenity Suite" loading="lazy"/>
+                <div class="bento-overlay">
+                    <div class="bento-info">
+                        <h4>Serenity Suite</h4>
+                        <p><i class="fas fa-couch"></i> Absolute luxury</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fullscreen Premium Lightbox -->
+    <div class="lightbox" id="gallery-lightbox">
+        <div class="lightbox-close"><i class="fas fa-times"></i></div>
+        <div class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="lightbox-nav lightbox-next"><i class="fas fa-chevron-right"></i></div>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="Full Screen Custom Image">
+        </div>
+    </div>
+
+    <!-- Footer Component -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col reveal-up">
+                <h3>KingSukh Guest House</h3>
+                <p>Discover a world of comfort, luxury, and adventure. Envelope yourself in the scenic allure of
+                    Purulia.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/kingsukhguesthouse/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col reveal-up">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="rooms.html">Our Rooms</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-col reveal-up">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt" style="color: var(--accent-gold); margin-right: 10px;"></i>
+                    Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</p>
+                <p><i class="fas fa-envelope" style="color: var(--accent-gold); margin-right: 10px;"></i>
+                    kkghosh0099@gmail.com</p>
+                <p><i class="fas fa-phone-alt" style="color: var(--accent-gold); margin-right: 10px;"></i> +91
+                    9007062180</p>
+            </div>
+        </div>
+        <div class="footer-bottom reveal-up">
+            <p>&copy; 2026 KingSukh Guest House. All rights reserved.</p>
+        </div>
+    </div>
+    <a href="https://wa.link/at5ion" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</footer>
+
+
+    <!-- Javascript files -->
+    <script src="script.js"></script>
+    <script>
+        // Coverflow Slider Logic
+        const slides = document.querySelectorAll('.coverflow-slide');
+        const bgs = document.querySelectorAll('.coverflow-bg');
+        const prevBtn = document.querySelector('.cover-prev');
+        const nextBtn = document.querySelector('.cover-next');
+        let currentIndex = 0;
+        const total = slides.length;
+
+        function updateCoverflow() {
+            slides.forEach((slide, i) => {
+                slide.className = 'coverflow-slide hidden';
+                bgs[i].style.opacity = '0';
+            });
+            
+            const prevIndex = (currentIndex - 1 + total) % total;
+            const nextIndex = (currentIndex + 1) % total;
+            
+            slides[currentIndex].className = 'coverflow-slide active';
+            bgs[currentIndex].style.opacity = '1';
+            
+            slides[prevIndex].className = 'coverflow-slide prev';
+            slides[nextIndex].className = 'coverflow-slide next';
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % total;
+            updateCoverflow();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + total) % total;
+            updateCoverflow();
+        }
+
+        nextBtn.addEventListener('click', () => { nextSlide(); resetTimer(); });
+        prevBtn.addEventListener('click', () => { prevSlide(); resetTimer(); });
+
+        slides.forEach(slide => {
+            slide.addEventListener('click', function() {
+                if (this.classList.contains('prev')) {
+                    prevSlide(); resetTimer();
+                } else if (this.classList.contains('next')) {
+                    nextSlide(); resetTimer();
+                }
+            });
+        });
+
+        // Auto move system
+        let autoPlay = setInterval(nextSlide, 3500);
+        function resetTimer() {
+            clearInterval(autoPlay);
+            autoPlay = setInterval(nextSlide, 3500);
+        }
+        
+        // Initializer
+        updateCoverflow();
+
+        // ---------------- LIGHTBOX LOGIC ----------------
+        const lightbox = document.getElementById('gallery-lightbox');
+        if (lightbox) {
+            const lightboxImg = document.getElementById('lightbox-image');
+            const closeBtn = document.querySelector('.lightbox-close');
+            const lPrevBtn = document.querySelector('.lightbox-prev');
+            const lNextBtn = document.querySelector('.lightbox-next');
+            const bentoItems = Array.from(document.querySelectorAll('.bento-item'));
+            let lCurrentIndex = 0;
+
+            bentoItems.forEach((item, index) => {
+                item.addEventListener('click', () => {
+                    lCurrentIndex = index;
+                    openLightbox();
+                });
+            });
+
+            function openLightbox() {
+                const fullSrc = bentoItems[lCurrentIndex].getAttribute('data-full');
+                lightboxImg.style.opacity = 0;
+                setTimeout(() => {
+                    lightboxImg.src = fullSrc;
+                    lightboxImg.style.opacity = 1;
+                }, 150);
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden'; 
+            }
+
+            function lNextImage(e) {
+                if (e) e.stopPropagation();
+                lCurrentIndex = (lCurrentIndex + 1) % bentoItems.length;
+                openLightbox();
+            }
+
+            function lPrevImage(e) {
+                if (e) e.stopPropagation();
+                lCurrentIndex = (lCurrentIndex - 1 + bentoItems.length) % bentoItems.length;
+                openLightbox();
+            }
+
+            lNextBtn.addEventListener('click', lNextImage);
+            lPrevBtn.addEventListener('click', lPrevImage);
+
+            closeBtn.addEventListener('click', () => {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto'; 
+            });
+
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') closeBtn.click();
+                if (e.key === 'ArrowRight') lNextImage();
+                if (e.key === 'ArrowLeft') lPrevImage();
+            });
+        }
+    </script>
+</body>
+</html>
