@@ -64,7 +64,7 @@ At **KingSukh Guest House**, comfort is paramount. Our living spaces include:
   <img src="home.png" alt="Home page" width="600"/>
 </p>
 <p align="center">
-  <img src="room.png.png" alt="Rooms page" width="600"/>
+  <img src="room.png" alt="Rooms page" width="600"/>
 </p>
 <p align="center">
   <img src="gallery.png" alt="Gallery page" width="600"/>
