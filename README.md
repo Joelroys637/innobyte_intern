@@ -59,6 +59,10 @@ At **KingSukh Guest House**, comfort is paramount. Our living spaces include:
 
 ---
 
+## Output Screen:
+<p align="center">
+  <img src="home.jpg" alt="Room Image" width="600"/>
+</p>
 <p align="center">
   <i>The Best Holidays Start Here at <strong>KingSukh Guest House</strong>!</i>
 </p>
